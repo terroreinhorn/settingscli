@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Settings CLI
+Comment=Terminal-based system control interface
+Exec=kitty -e bash -c "$HOME/.config/settingscli/settingscli.sh"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=System;Utility;

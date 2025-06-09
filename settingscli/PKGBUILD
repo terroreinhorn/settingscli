@@ -1,0 +1,17 @@
+pkgname=settingscli
+pkgver=1.0
+pkgrel=1
+pkgdesc="A universal terminal-based system control panel using fzf"
+arch=('any')
+url="https://github.com/yourusername/settingscli"
+license=('MIT')
+depends=('fzf' 'viu' 'bash')
+optdepends=('kitty: image preview in overlay')
+source=()
+md5sums=()
+
+package() {
+  install -Dm755 "$srcdir/settingscli.sh" "$pkgdir/usr/bin/settingscli"
+  install -Dm755 "$srcdir/preview-wallpaper.sh" "$pkgdir/usr/share/settingscli/preview-wallpaper.sh"
+  install -Dm644 "$srcdir/settingscli.desktop" "$pkgdir/usr/share/applications/settingscli.desktop"
+}
