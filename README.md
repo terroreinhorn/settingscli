@@ -71,9 +71,3 @@ settingscli
 ```
 
 Or using your system launcher (a `.desktop` file is included).
-
----
-
-## 📄 License
-
-GPL-3.0
